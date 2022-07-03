@@ -1,0 +1,90 @@
+body
+{
+    background-color: turquoise;
+    color:white;
+}
+.header
+{
+  padding:20px;
+  display: flex;
+  justify-content: space-between;
+}
+.title{
+    font-size:30px;
+    color:white;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.accountfunc
+{
+    padding:15px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navigations
+{
+    margin-top: 10px;
+}
+.button {
+    background-color: black;
+    border: none;
+    color: cyan;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:disabled{
+    background-color: grey;
+}
+button:enabled{
+    background-color: black;
+      border: none;
+      color: cyan;
+      padding: 10px 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+}
+.textinput
+{
+    height:50px;
+    width:500px;
+    font-size:20pt;
+}
+.resultbox
+{
+   
+    font-size:18pt;
+}
+.display-block {
+    display: block;
+}
+#convertbtn
+{
+    background-color:black
+} 
+.display-none {
+    display: none;
+}
+#link:hover {
+    color: black;
+    background-color: grey;
+    cursor: pointer;
+    text-decoration: none
+  }
+#link
+{
+    background-color: white;
+    color:turquoise;
+}
+  
+

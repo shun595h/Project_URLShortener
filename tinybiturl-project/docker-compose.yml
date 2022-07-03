@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=hsh9673
+  backend:
+    build: ./tinybiturl
+    volumes:
+      - ./backend:/app/tinybiturl
+    ports:
+      - "8000:8000"  
+    stdin_open: true
+    tty: true
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    depends_on:
+      - db
+
+  frontend:
+    build: ./tinybiturl-front
+    volumes:
+      - ./frontend:/app/tinybiturl-front
+      # One-way volume to use node_modules from inside image
+      - /app/frontend/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - backend
+    command: npm start
