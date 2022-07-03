@@ -8,8 +8,8 @@ Short URL Project
      
   Clone this repository
          
-     https://github.com/shun595h/ProjectURL_short.git
-
+     https://github.com/shun595h/Project_URLShortener.git
+     
 SELECT Folder at parent directory, tinybiturl-project 
 
 Run docker 
