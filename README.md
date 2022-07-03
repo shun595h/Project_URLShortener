@@ -1,6 +1,5 @@
 # Project_URLShortener
- 
-# ProjectURL_short
+
 SITE that shorten URL makes it easy access
 
 Short URL Project
